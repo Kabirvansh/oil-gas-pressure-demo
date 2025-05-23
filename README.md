@@ -26,12 +26,12 @@ This repository contains a proof-of-concept SCADA/HMI project for an oil & gas c
 
 3. **Historical Data Log** (data/pressure_log.csv)
 
-   - Sample timestamped pressures and alarm flags used by the Streamlit app
+   - Sample timestamped pressures and alarm flags used by the Streamlit app. Currently it is done on randomly generated sample data and not from the created OPC UA server.
 
 4. **Streamlit Dashboard** (streamlit_app/)
    - Interactive line and bar charts of pressure trends
    - Raw data table view
-   - (Link to live demo: **_INSERT_STREAMLIT_LINK_HERE_**)
+   - (Link to live demo: **https://oil-gas-pressure-dashboard-rqnnt84d9sbu793upsqmow.streamlit.app/**)
 
 ## Prerequisites
 
@@ -58,4 +58,4 @@ This repository contains a proof-of-concept SCADA/HMI project for an oil & gas c
 
 ### 3. Launch the Streamlit Dashboard
 
-1. Open the link: **_INSERT_STREAMLIT_LINK_HERE_**
+1. Open the link: **https://oil-gas-pressure-dashboard-rqnnt84d9sbu793upsqmow.streamlit.app/**
