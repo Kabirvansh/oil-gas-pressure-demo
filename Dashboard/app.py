@@ -9,7 +9,7 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-st.title("🚨 SCADA Alarm & Pressure Interactive Dashboard 🚨")
+st.title("SCADA Alarm & Pressure Interactive Dashboard")
 uploaded = st.sidebar.file_uploader("Upload SCADA CSV", type="csv")
 
 if uploaded:

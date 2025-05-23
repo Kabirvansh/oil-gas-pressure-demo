@@ -1,0 +1,54 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Python virtual environments
+venv/
+.env/
+.env.*
+.venv/
+
+# Streamlit cache & checkpoints
+.streamlit/
+*.streamlit
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+desktop.ini
+
+# IDEs / editors
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# Logs
+*.log
+
+# Ignition Designer temporary or local files
+*.backup
+*.tmp
+tags_backup.json
+
+# OS-specific swap
+*~
+
+# GitHub Desktop
+.history/
+
+# Package distributions
+dist/
+build/
+*.egg-info/
+
+# Any local config or secrets
+*.env
