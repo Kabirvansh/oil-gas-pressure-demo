@@ -10,7 +10,7 @@ st.set_page_config(
 )
 
 st.title("SCADA Alarm & Pressure Interactive Dashboard")
-uploaded = st.sidebar.file_uploader("Upload SCADA CSV", type="csv")
+uploaded = st.sidebar.file_uploader("Upload SCADA CSV(beta)", type="csv")
 
 if uploaded:
     df = pd.read_csv(uploaded, parse_dates=["timestamp"])
@@ -34,7 +34,7 @@ start, end = st.sidebar.slider(
 )
 df = df[(df["timestamp"] >= pd.to_datetime(start)) & (df["timestamp"] <= pd.to_datetime(end))]
 
-tabs = st.tabs(["📈 Trends", "📊 Distribution", "🔍 Details"])
+tabs = st.tabs(["Trends", "Distribution", "Details"])
 
 with tabs[0]:
     st.subheader("Alarm & Pressure Trends Over Time")
