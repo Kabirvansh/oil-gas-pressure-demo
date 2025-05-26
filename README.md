@@ -44,18 +44,11 @@ This repository contains a proof-of-concept SCADA/HMI project for an oil & gas c
 ### 1. Import & Launch the Ignition Project
 
 1. Start Ignition Maker Edition on your machine.
-2. In the Gateway web UI, go to **Config → Projects → Import Project** and select the `ignition_project/OilGasPressureDemo.gateway` bundle.
+2. In the Gateway web UI, go to **Config → Projects → Import Project** and select the `ignition_project/OilGasPressureDemo.gateway` bundle after unzipping the zipped file.
 3. Under **Config → OPC UA → Server**, verify **Bind Port** is `62541` and the server is **Enabled**.
 4. Under **Status → Connections → OPC Connections**, ensure the “Ignition OPC UA Server” is **Connected**.
 5. Under **Status → Connections → Designer Sessions**, click **Launch Designer**, open **CompressorStation**, and enter **Preview**.
 
-### 2. Capture OPC UA Traffic
-
-1. Open **Wireshark** and start a capture on **Loopback: lo0** with capture filter `port 62541`.
-2. In Designer Preview, reset your session (disconnect/relaunch) so it reconnects to OPC UA.
-3. Click **Start Compressor** and **Stop Compressor** a few times.
-4. Stop capture and open `docs/wireshark.png` to view the handshake, read, and write messages.
-
-### 3. Launch the Streamlit Dashboard
+### 2. Launch the Streamlit Dashboard
 
 1. Open the link: **https://oil-gas-pressure-dashboard-rqnnt84d9sbu793upsqmow.streamlit.app/**
