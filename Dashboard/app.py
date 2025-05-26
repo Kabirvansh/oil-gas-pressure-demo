@@ -9,8 +9,8 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-st.title("SCADA Alarm & Pressure Interactive Dashboard")
-uploaded = st.sidebar.file_uploader("Upload SCADA CSV(beta)", type="csv")
+st.title("SCADA Alarm & Pressure Dashboard")
+uploaded = st.sidebar.file_uploader("Upload CSV file(beta)", type="csv")
 
 if uploaded:
     df = pd.read_csv(uploaded, parse_dates=["timestamp"])
